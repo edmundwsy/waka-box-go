@@ -1,4 +1,4 @@
-module github.com/YouEclipse/waka-box-go
+module github.com/XiaoMiku01/waka-box-go
 
 go 1.14
 
