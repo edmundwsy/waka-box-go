@@ -158,10 +158,8 @@ func (b *Box) GenerateGistLines(ctx context.Context, languages []wakatime.StatIt
 		if max >= 5 {
 			break
 		}
-		if (*stat.Name != "Other") {
-			lines = append(lines, b.ConstructLine(ctx, stat))
-			max++
-		}
+		lines = append(lines, b.ConstructLine(ctx, stat))
+		max++
 	}
 	return lines, nil
 }
